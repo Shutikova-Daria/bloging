@@ -2521,9 +2521,24 @@ a {
   transition: .4s all;
 }
 
-.cid-thXOFoR04R .card-wrapper:hover:after {
-  background: linear-gradient(45deg, #1E90FF, #9932CC);
+.cid-thXOFoR04R .card-wrapper {
+  position: relative; /* потрібен для абсолютного позиціонування :after */
+  overflow: hidden;   /* щоб не вилазив за межі */
 }
+
+.cid-thXOFoR04R .card-wrapper:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #1E90FF, #9932CC);
+  opacity: 0.3; /* прозорість, щоб бачити контент */
+  pointer-events: none; /* щоб :after не блокував кліки */
+  z-index: 1;
+}
+
 
 .cid-thXOFoR04R .card-wrapper:hover .card-bg {
   opacity: 1;
