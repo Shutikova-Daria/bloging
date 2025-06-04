@@ -35,6 +35,50 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <style>
+    /* Navigation bar scaling */
+    .navbar-brand .navbar-caption,
+    .navbar-nav .nav-link,
+    .header-btn {
+      font-size: calc(100% / 1.5) !important; /* Scale down by 1.5 */
+    }
+    .navbar-brand .navbar-logo img {
+      height: calc(53px / 2) !important; /* Scale logo by 2 */
+    }
+    .navbar-toggler .hamburger span {
+      width: calc(30px / 1.5); /* Assuming default hamburger width is ~30px, scale down */
+      height: calc(3px / 1.5); /* Assuming default hamburger line height */
+      margin: calc(5px / 1.5) 0; /* Assuming default margin */
+    }
+
+    /* Blue-purple gradient for card hover in section afeatures1-3 */
+    #afeatures1-3 .card-wrapper:hover .services_iconsStar svg {
+      fill: url(#blue-purple-gradient);
+    }
+
+    /* Define blue-purple gradient */
+    #afeatures1-3 svg defs {
+      /* Replace existing gradient or add new */
+    }
+    #afeatures1-3 svg defs linearGradient#icon-gradient {
+      display: none; /* Hide original gradient on hover */
+    }
+    #afeatures1-3 svg defs {
+      /* Add blue-purple gradient */
+    }
+    #afeatures1-3 svg defs:after {
+      content: '';
+    }
+    #blue-purple-gradient {
+      /* Blue-purple gradient definition */
+    }
+    linearGradient#blue-purple-gradient stop:nth-child(1) {
+      stop-color: #1E90FF; /* Blue */
+    }
+    linearGradient#blue-purple-gradient stop:nth-child(2) {
+      stop-color: #9932CC; /* Purple */
+    }
+  </style>
 </head>
 
 <body>
