@@ -50,34 +50,44 @@
       height: calc(3px / 1.5); /* Assuming default hamburger line height */
       margin: calc(5px / 1.5) 0; /* Assuming default margin */
     }
+     #afeatures1-3 .card-wrapper:hover .services_iconsStar svg {
+    fill: url(#blue-purple-gradient); /* Применение градиента при наведении */
+  }
 
-    /* Blue-purple gradient for card hover in section afeatures1-3 */
-    #afeatures1-3 .card-wrapper:hover .services_iconsStar svg {
-      fill: url(#blue-purple-gradient);
-    }
+  /* Определение синего-фиолетового градиента */
+  #afeatures1-3 svg defs {
+    /* Убедитесь, что градиент определён в этой секции */
+  }
 
-    /* Define blue-purple gradient */
-    #afeatures1-3 svg defs {
-      /* Replace existing gradient or add new */
-    }
-    #afeatures1-3 svg defs linearGradient#icon-gradient {
-      display: none; /* Hide original gradient on hover */
-    }
-    #afeatures1-3 svg defs {
-      /* Add blue-purple gradient */
-    }
-    #afeatures1-3 svg defs:after {
-      content: '';
-    }
-    #blue-purple-gradient {
-      /* Blue-purple gradient definition */
-    }
-    linearGradient#blue-purple-gradient stop:nth-child(1) {
-      stop-color: #1E90FF; /* Blue */
-    }
-    linearGradient#blue-purple-gradient stop:nth-child(2) {
-      stop-color: #9932CC; /* Purple */
-    }
+  /* Скрытие оригинального градиента при наведении */
+  #afeatures1-3 svg defs linearGradient#icon-gradient {
+    display: none;
+  }
+
+  /* Повторное определение блока defs (может быть не нужно — зависит от структуры SVG) */
+  #afeatures1-3 svg defs {
+    /* Здесь можно вставить определение нового градиента */
+  }
+
+  /* Псевдоэлемент для принудительной перерисовки (чаще не требуется) */
+  #afeatures1-3 svg defs:after {
+    content: '';
+  }
+
+  /* Новый градиент с синим и фиолетовым оттенками */
+  #blue-purple-gradient {
+    /* Определение самого градиента, нужно задать как <linearGradient> в SVG */
+  }
+
+  /* Первый цвет (синий) в градиенте */
+  linearGradient#blue-purple-gradient stop:nth-child(1) {
+    stop-color: #1E90FF;
+  }
+
+  /* Второй цвет (фиолетовый) в градиенте */
+  linearGradient#blue-purple-gradient stop:nth-child(2) {
+    stop-color: #9932CC;
+  }
   </style>
 </head>
 
