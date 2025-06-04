@@ -2527,16 +2527,9 @@ a {
 }
 
 .cid-thXOFoR04R .card-wrapper:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+ 
   background: linear-gradient(45deg, #1E90FF, #9932CC);
-  opacity: 0.3; /* прозорість, щоб бачити контент */
-  pointer-events: none; /* щоб :after не блокував кліки */
-  z-index: 1;
+ 
 }
 
 
