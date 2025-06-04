@@ -2521,11 +2521,6 @@ a {
   transition: .4s all;
 }
 
-.cid-thXOFoR04R .card-wrapper {
-  position: relative; /* потрібен для абсолютного позиціонування :after */
-  overflow: hidden;   /* щоб не вилазив за межі */
-}
-
 .cid-thXOFoR04R .card-wrapper:hover::after {
  
   background: linear-gradient(45deg, #1E90FF, #9932CC);
