@@ -868,7 +868,7 @@ a {
 .container {
   max-width: 1320px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: -5px;
   padding-left: 15px;
   padding-right: 15px;
 }
