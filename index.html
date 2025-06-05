@@ -35,7 +35,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
+<style>
+    /* Navigation bar scaling */
+    .navbar-brand .navbar-caption,
+    .navbar-nav .nav-link,
+    .header-btn {
+      font-size: calc(100% / 1.0) !important; /* Scale down by 1.5 */
+    }
+    .navbar-brand .navbar-logo img {
+      height: calc(53px / 1.0) !important; /* Scale logo by 2 */
+    }
+    .navbar-toggler .hamburger span {
+      width: calc(30px / 1.0); /* Assuming default hamburger width is ~30px, scale down */
+      height: calc(3px / 1.0); /* Assuming default hamburger line height */
+      margin: calc(5px / 1.0) 0; /* Assuming default margin */
+    }
+  </style>
 </head>
 
 <body>
